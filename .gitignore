@@ -1,0 +1,9 @@
+target/
+StoreDistanceCalculator.iml
+todo.txt
+<<<<<<< HEAD
+/.idea/
+=======
+.idea/
+>>>>>>> release/1.3.0
+out/
