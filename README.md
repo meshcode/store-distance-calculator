@@ -1,39 +1,44 @@
-# Distance calculator 
+# Store Distance Calculator
 
 ![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
 
-Simple GIU Java app calculating distance between one main point and three others. 
+Basic Java GUI app calculating distance relationships from one main point to three other points on the X-Y plane. 
 
-## Table of contents
-* [What am I for?](#what-am-i-for)
+## Contents
+* [Purpose](#what-am-i-for)
+* [Solution](#solution)
 * [Built with](#built-with)
 * [Screenshots](#screenshots)
 
-## What am I for?
-#### First requirements from the SDA class [(this is continuation of 3rd exercise - POINTS)](https://git.kobiela.click/wiktor.kobiela/JavaHomeworkExcersice#user-content-3rd-excercise-points)
+## Purpose
+#### A compilation of assigned coding from the Software Development Academy tester classroom  
+The code is a modified version of an excellent example by [(WK)](https://git.kobiela.click/wiktor.kobiela/Java3Exercise)
 ``` 
-Write a simple Java program to calculate:
-   1. House is point [x = 0 y = 0]
-   2. Old Żabka [x = 1.2, y = 2.5], Biedronka [x = 3.3, y=2.7]
-   3. Old Żabka is closed, new Żabka [x = 5.5, y = -2.3] 
-   4. How far is from home to new closest shop?
-   5. Is it in favor or disadvantage for us? What's the difference?
+We were assigned to write a simple Java program to make calculations based on the following data:
+   1. Home is at location point [x = 0 y = 0]
+   2. The old Żabka store is at [x = 1.2, y = 2.5]
+   3. A new Biedronka store is at [x = 3.3, y=2.7]
+   4. The new Żabka store replacing the old is at [x = 5.5, y = -2.3] 
+   5. How far is it from home to the new stpre and closest store?
+   6. Is it in favor for us? What's the difference in distance between the existing stores?
  ```
  
-#### Current solution  
-  - Start from Main.java file,
-  - GUI application,
-  - 4 points to enter, 1 main (home point) and three other,
-  - 4 buttons: clear and fill textfields with default data, draw chart and calculate,
-  - Working exceptions with info popup,
-  - Implemented Cucumber/Gherkin simple test to test Calculate/Point classes,
-  - Simple menu-bar with About window and Exit option with popup checking decision,
-  - Now using Nimbus Java look if available.
+#### Solution  
+  - The Main.java file is the starting point and calls:
+  - the form GUI which will be using the Point class (with lombok).
+  - In the GUI there are 4 points to be input: 1 origin (homebase) and three other points.
+  - In the GUI there are 4 buttons: 
+  - Clear, fill with default data, plot chart and calculate.
+  - Calculations performed with Calculate.java
+  - Can output to system console + Textarea in GUI + plot a chart.
+  - Working exceptions with info popup.
+  - Implemented Cucumber/Gherkin simple test to test Calculate/Point classes.
+  - Simple menu-bar with About window and Exit option with popup checking decision.
   
 ## Built With
 ###### App
   - [Java Swing](https://docs.oracle.com/javase/7/docs/api/javax/swing/package-summary.html)
-  - Swing UI Designer from IntelliJ
+  - Swing UI Designer from IntelliJ + Form builder
   - [XChart](https://github.com/knowm/XChart) - light-weight Java library for plotting data
   - [Project Lombok](https://projectlombok.org/) -  java library that can automatically create setters/getters and so on
 ###### Tests

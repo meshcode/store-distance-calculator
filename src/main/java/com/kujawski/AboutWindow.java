@@ -1,5 +1,6 @@
 package com.kujawski;
 
+//IMPORTS
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -7,6 +8,8 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+//
+//ABOUT CLASS
 public class AboutWindow {
 
     private static JDialog frame3;
@@ -16,11 +19,13 @@ public class AboutWindow {
     private JLabel hyperlink;
     static JFrame f;
 
+    //
+    //MAIN ABOUT FUNCTION
     public static void main(String[] args) {
 
         f = new JFrame();
 
-        frame3 = new JDialog(f, "About calculator");
+        frame3 = new JDialog(f, "About Distance Calculator");
         frame3.setContentPane(new AboutWindow().panel2);
         frame3.setPreferredSize(new Dimension(400, 200));
         frame3.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -38,6 +43,8 @@ public class AboutWindow {
 
 
     public AboutWindow() {
+        //
+        //OK BUTTON
         OKButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -45,7 +52,7 @@ public class AboutWindow {
             }
         });
 
-
+        //HYPERLINK TO WK
         hyperlink.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -62,16 +69,18 @@ public class AboutWindow {
         hyperlink.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
-                hyperlink.setText("<html><a href=''>Check repository!</a></html>");
+                hyperlink.setText("<html><a href=''>Original by WK</a></html>");
             }
         });
         hyperlink.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseExited(MouseEvent e) {
-                hyperlink.setText("Check repository!");
+                hyperlink.setText("Original by WK");
             }
         });
     }
+
+
 
 
     private void createUIComponents() {

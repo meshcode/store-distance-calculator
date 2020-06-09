@@ -1,5 +1,6 @@
 package com.kujawski;
 
+//IMPORT SPECIAL CHARTING
 import org.knowm.xchart.*;
 import org.knowm.xchart.style.Styler;
 
@@ -8,7 +9,7 @@ import java.awt.*;
 
 public class XChart extends JFrame {
 
-
+//RECEIVE CHARTING ARGUMENTS
         public static void main(String[] args, double x1, double x2, double x3, double x4, double y1, double y2, double y3, double y4, String name1, String name2, String name3, String name4, double dst1, double dst2, double dst3) {
 
             // Create Chart
@@ -16,7 +17,7 @@ public class XChart extends JFrame {
                     new XYChartBuilder()
                             .width(600)
                             .height(500)
-                            .title("Distance from Home point")
+                            .title("Distances from Origin (km)")
                             .xAxisTitle("X")
                             .yAxisTitle("Y")
                             .build();
@@ -43,7 +44,7 @@ public class XChart extends JFrame {
                         public void run() {
 
                             // Create and set up the window.
-                            JFrame frame = new JFrame("Distance chart");
+                            JFrame frame = new JFrame("Distances from Origin in Kilometers");
                             frame.setLayout(new BorderLayout());
                             frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -69,25 +70,5 @@ public class XChart extends JFrame {
         }
 
 
-//        public void Save(){
-//
-//            //chart.getChart();
-//
-//
-//            BitmapEncoder.saveBitmap(chart, "./Sample_Chart", BitmapEncoder.BitmapFormat.PNG);
-//            BitmapEncoder.saveBitmap(chart, "./Sample_Chart", BitmapEncoder.BitmapFormat.JPG);
-//            BitmapEncoder.saveJPGWithQuality(chart, "./Sample_Chart_With_Quality.jpg", 0.95f);
-//            BitmapEncoder.saveBitmap(chart, "./Sample_Chart", BitmapEncoder.BitmapFormat.BMP);
-//            BitmapEncoder.saveBitmap(chart, "./Sample_Chart", BitmapEncoder.BitmapFormat.GIF);
-//
-//            BitmapEncoder.saveBitmapWithDPI(chart, "./Sample_Chart_300_DPI", BitmapEncoder.BitmapFormat.PNG, 300);
-//            BitmapEncoder.saveBitmapWithDPI(chart, "./Sample_Chart_300_DPI", BitmapFormat.JPG, 300);
-//            BitmapEncoder.saveBitmapWithDPI(chart, "./Sample_Chart_300_DPI", BitmapFormat.GIF, 300);
-//
-//            VectorGraphicsEncoder.saveVectorGraphic(chart, "./Sample_Chart", VectorGraphicsFormat.EPS);
-//            VectorGraphicsEncoder.saveVectorGraphic(chart, "./Sample_Chart", VectorGraphicsFormat.PDF);
-//            VectorGraphicsEncoder.saveVectorGraphic(chart, "./Sample_Chart", VectorGraphicsFormat.SVG);
-//
-//        }
 
     }
