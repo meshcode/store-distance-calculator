@@ -5,7 +5,7 @@
 Basic Java GUI app calculating distance relationships from one main point to three other points on the X-Y plane. 
 
 ## Contents
-* [Purpose](#what-am-i-for)
+* [Purpose](#purpose)
 * [Solution](#solution)
 * [Built with](#built-with)
 * [Screenshots](#screenshots)
@@ -23,7 +23,7 @@ We were assigned to write a simple Java program to make calculations based on th
    6. Is it in favor for us? What's the difference in distance between the existing stores?
  ```
  
-#### Solution  
+## Solution  
   - The Main.java file is the starting point and calls:
   - the form GUI which will be using the Point class (with lombok).
   - In the GUI there are 4 points to be input: 1 origin (homebase) and three other points.
