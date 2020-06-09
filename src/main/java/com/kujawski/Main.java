@@ -11,12 +11,17 @@
 
 //main package
 package com.kujawski;
+
+
+
+
 //main class
 public class Main {
     //main function
     public static void main(String[] args) {
         //initializing call to the Form GUI
         Form.main(null);
+
     }
 
 }

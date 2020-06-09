@@ -15,11 +15,12 @@ public class XChart extends JFrame {
             // Create Chart
             final XYChart chart =
                     new XYChartBuilder()
+
                             .width(600)
                             .height(500)
                             .title("Distances from Origin (km)")
-                            .xAxisTitle("X")
-                            .yAxisTitle("Y")
+                            .xAxisTitle("X km")
+                            .yAxisTitle("Y km")
                             .build();
 
             // Customize Chart
