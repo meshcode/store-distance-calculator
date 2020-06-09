@@ -48,10 +48,10 @@ We were assigned to write a simple Java program to make calculations based on th
 ## Screenshots  
   
   ###### Main app window
-  ![Window app](https://i.imgur.com/TZ9ud2gundefined.png)
+  ![Window app](https://i.imgur.com/TZ9ud2g.png)
   ###### Chart window
-  ![Chart](https://i.imgur.com/Zwiv7dQundefined.png)
+  ![Chart](https://i.imgur.com/Zwiv7dQ.png)
   ###### Cucumber / Gherkin test process within IntelliJ
-  ![Test](https://i.imgur.com/uhXxP9pundefined.jpg)
+  ![Test](https://i.imgur.com/uhXxP9p.jpg)
   
   
