@@ -7,6 +7,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+import static org.junit.Assert.*;
+
 import static org.junit.Assert.assertEquals;
 
 
@@ -16,6 +18,7 @@ public class MyStepdefs {
 
     @Given("Calculator module and Point module is OK")
     public void calculatorModuleAndPointModuleIsOK() {
+
     }
 
     @When("Create point using {string} {double} {double}")
@@ -39,6 +42,7 @@ public class MyStepdefs {
 
     @Then("Distance equals {double}")
     public void distanceEquals(double wanted) {
+       //assertEquals(wanted, distance);
         if (wanted == distance){
             System.out.println("Wanted distance is: " + wanted + " and calculated distance is: " + distance + ". \n Calculation correct!");
             System.out.println();
