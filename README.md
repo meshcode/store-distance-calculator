@@ -48,7 +48,7 @@ We were assigned to write a simple Java program to make calculations based on th
 ## Screenshots  
   
   ###### Main app window
-  ![Window app](https://i.imgur.com/TZ9ud2g.png)
+  ![App](https://i.imgur.com/aRepVSo.png)
   ###### Chart window
   ![Chart](https://i.imgur.com/Zwiv7dQ.png)
   ###### Cucumber / Gherkin test process within IntelliJ
